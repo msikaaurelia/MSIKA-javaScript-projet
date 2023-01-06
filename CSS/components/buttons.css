@@ -1,0 +1,19 @@
+.btn-demo{
+    font-family: montserrat;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #FBEAD2;
+    border-radius: 10px;
+    border: none;
+    padding: 30px 30px;
+    color: black;
+    height: fit-content;
+    transition: background-color 1s;
+}
+
+.btn-demo:hover{
+    background-color: #f8dfbf;
+    color: black;
+    transform: scale(1.06);
+    transition: .6s;
+}
