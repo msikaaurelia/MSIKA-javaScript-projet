@@ -1,15 +1,10 @@
+//Dark mode
+
 const body = document.querySelector("body");
 const cont = document.querySelector(".main-container");
-//const h1 = document.querySelector("h1"); //variable avec const --> un variant qui ne peut pas être modifié par la suite
 const button = document.querySelector("#button");
 
 console.log(body)
-
-
-//const h1 = document.querySelector('h1');
-//console.log(document)
-
-//body.classList.add("dark");
 
 console.log(body.classList.contains("dark"))
 
@@ -25,31 +20,27 @@ button.addEventListener("click", function() {
         button.innerText = "Mode 🌚";
     }
     
-})
-
-const goodvisit = document.querySelector(".good-visit");
-
-button.addEventListener("click", function() {
-
-    if (goodvisit.classList.contains(".a_class")) {
-        goodvisit.classList.remove(".a_class");
-        goodvisit.classList.add(".a_js");
-    } else {
-        goodvisit.classList.add(".a_class");
-        goodvisit.classList.remove(".a_js");
-    }
-    
-})
+});
 
 
-const h3 = document.querySelector(".photographie");
+/*//Couleur h1
 
-button.addEventListener("click", function() {
+const h1 = document.querySelector("h1");
+//const button = document.querySelector("button");
 
-    if (document.getElementsByClassName("photographie").style.color === "black") {
-        document.getElementsByClassName("photographie").style.color = "pink";
-    } else {
-        document.getElementsByClassName("photographie").style.color = "black";
-    }
-    
-})
+h1.addEventListener("click", function() {
+
+  h1.style.color = "#47C7FF80";
+});*/
+
+
+const h1 = document.querySelector("h1");
+
+h1.addEventListener("click", function() {
+  if (h1.style.color === "pink") {
+    h1.style.color = "black";  
+  } else {
+    h1.style.color = "pink";  
+  }
+  
+});

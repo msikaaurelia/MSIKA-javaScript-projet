@@ -30,14 +30,6 @@ a{
   color: black;
 }
 
-.a_class{
-  color: black;
-}
-
-.a_js{
-  color:#FFF4E3;
-}
-
 a:hover{
     color:rgb(128, 126, 116);
 }
@@ -103,25 +95,63 @@ body{
 
   /********************JS*******************/
 
+  /****************Light***************/
   .light{
     background-color: #FFF4E3;
     color: #222222;
   }
 
+  /****************Dark***************/
+
   .dark{
-    background-color: #4d4438;
+    background-color: #4a4a4a;
     color: #FFF4E3;
   }
+
+  .dark a{
+    color: #FFF4E3;
+  }
+
+  .dark a:hover{
+    color:#a2a2a2;
+  }
+
+  .dark footer{
+    background-color: #353535;
+    color: #FFF4E3;
+  }
+
+  .dark h3{
+    color: #FFF4E3;
+  }
+
+  .dark .gototop{
+    background-color: #a2a2a2;
+    color: #353535;
+  }
+
+  .dark #other_pics{
+    background-color: #a2a2a2;
+  }
+
+  .dark .btn-demo{
+    background-color: #a2a2a2;
+  }
+
+  /****************Fin Dark***************/
 
   #button{
     height: 60px;
     width: 120px;
     color: #FFF4E3;
-    background-color: #4d4438;
+    background-color: #706659;
     border-radius: 6px;
   }
 
-  #div_other_pics{
+
+  /*Je comprends pas pourquoi ça ne marche pas*/
+
+  /*#div_other_pics{
     text-align: center;
     margin-bottom: 40px;    
   }
@@ -130,7 +160,7 @@ body{
     height: 60px;
     width: 180px;
     color: #FFF4E3;
-    background-color: #4d4438;
+    background-color: #706659;
     border-radius: 6px;
   }
 
@@ -142,57 +172,29 @@ body{
     grid-row-gap: 5px;
   }
 
-  .cards {
-    transform: translateY(100%);
+  .pics_appearing{
     opacity: 0;
+  }
+
+  .pics_disappearing{
+    opacity: 1;
+  }*/
+
+
+
+
+  /*.cards {
+    opacity: 1;
     transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
   }
 
   .active {
-    transform: translateY(0%);
-    opacity: 1;
-  }
-
-/* Mode clair 
-body {
-  background-color: beige;
-}
-
-header {
-  background-color: pink;
-}
-
-footer {
-  background-color: pink;
-}
-
-main {
-  background-color: #DDD;
-}
+    opacity: 0;
+  }*/
 
 
-/* Mode sombre 
-.dark {
-  background-color: #222;
-}
 
-.dark header {
-    background-color: purple;
-  color: white;
-}
-
-.dark main {
-    background-color: blue;
-  color: white;
-}
-
-.dark footer {
-    background-color: orange;
-  color: white;
-}
-*/
-
-/* à mettre dans JS
+  /* à mettre dans JS
 const button = document.querySelector("button");
 
 const body = document.querySelector("body");
