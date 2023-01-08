@@ -95,6 +95,21 @@ body{
 
   /********************JS*******************/
 
+  #div_hidden{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .transition{
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  
+  .hidden{
+    transition: opacity 0.5s ease, transform 1s ease;
+  }
+
   /****************Light***************/
   .light{
     background-color: #FFF4E3;

@@ -46,10 +46,16 @@ h1.addEventListener("click", function() {
 });
 
 
-//Boucle + queryseletorall
+//Boucle + querySeletorAll
 
-let i = 0;
-do{
-    i+= 1;
+const paragraphs = document.querySelectorAll(".hidden");
+
+h1.addEventListener("click", function() {
+  paragraphs.forEach((e, i) => {
+    e.classList.toggle("transition");
+    
+    e.style.transitionDelay = (0.1 * i) + "s";
+    
     console.log(i);
-} while (i < 5);
+  })
+})
