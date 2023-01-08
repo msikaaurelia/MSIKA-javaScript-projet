@@ -37,10 +37,19 @@ h1.addEventListener("click", function() {
 const h1 = document.querySelector("h1");
 
 h1.addEventListener("click", function() {
-  if (h1.style.color === "pink") {
+  if (h1.style.color === "orange") {
     h1.style.color = "black";  
   } else {
-    h1.style.color = "pink";  
+    h1.style.color = "orange";  
   }
   
 });
+
+
+//Boucle + queryseletorall
+
+let i = 0;
+do{
+    i+= 1;
+    console.log(i);
+} while (i < 5);
