@@ -54,8 +54,8 @@ h1.addEventListener("click", function() {
   paragraphs.forEach((e, i) => {
     e.classList.toggle("transition");
     
-    e.style.transitionDelay = (0.1 * i) + "s";
+    e.style.transitionDelay = (0.2 * i) + "s";
     
     console.log(i);
   })
-})
+});
